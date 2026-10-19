@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubab Hamim — Ultra-Luxurious Portfolio (Pure HTML/CSS/JS)</title>
+  <meta name="description" content="Portfolio of Rubab Hamim — Aspiring Software Engineer, AI Automation Specialist & Robotics Builder.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Neural Cosmic Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Luxury Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-mark">
+        <div class="monogram">RH</div>
+        <div class="brand-text">
+          <h1>RUBAB HAMIM</h1>
+          <span>ROBOTICS · AI · SOFTWARE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link">Selected Works</a>
+        <a href="#skills" class="nav-link">Capabilities</a>
+        <a href="#achievements" class="nav-link">Milestones</a>
+        <a href="#about" class="nav-link">Foundation</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-gold">Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span>
+          <span>CURIOUS BY NATURE · TECHNICAL BY CHOICE</span>
+        </div>
+
+        <h1 class="hero-title">
+          Rubab <span class="gold-gradient">Hamim</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Architecting Intelligent Systems, Autonomous Robotics & Modern Software
+        </p>
+
+        <p class="hero-desc">
+          Dedicated software engineer and robotics builder passionate about bridging fundamental computer science with physical autonomous systems, automated AI pipelines, and high-performance digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-gold">Explore Selected Works ↓</a>
+          <a href="#contact" class="btn btn-glass">Initiate Dialogue →</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>03+</strong>
+            <span>Core Deployments</span>
+          </div>
+          <div class="metric-item">
+            <strong>CS50</strong>
+            <span>Harvard Foundation</span>
+          </div>
+          <div class="metric-item">
+            <strong>RoboFusion</strong>
+            <span>Robotics Challenge</span>
+          </div>
+          <div class="metric-item">
+            <strong>100%</strong>
+            <span>Active Execution</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rubab's Portrait Photo Card -->
+      <div class="hero-media">
+        <div class="portrait-card">
+          <div class="portrait-photo-frame">
+            <img id="rubab-photo-img" src="assets/images/profile.png" alt="Rubab Hamim portrait" referrerPolicy="no-referrer">
+            <div class="portrait-scrim"></div>
+            
+            <div style="position:absolute;top:0.75rem;right:0.75rem;padding:0.25rem 0.55rem;font-size:0.68rem;font-family:var(--font-mono);background:rgba(0,0,0,0.6);border:1px solid rgba(230,198,135,0.3);border-radius:4px;color:var(--gold-primary)">
+              DHAKA · 2026
+            </div>
+
+            <div class="portrait-telemetry">
+              <div class="portrait-telemetry-row">
+                <strong style="color:var(--gold-primary)">Rubab Hamim</strong>
+                <span class="status-active">● Active Scholar</span>
+              </div>
+              <div class="portrait-telemetry-row" style="margin-top:4px;color:var(--text-muted)">
+                <span>C/C++ · Arduino · n8n</span>
+                <span>Dhaka, BD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Works Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">01 // PROVEN ARCHITECTURES</div>
+        <h2 class="section-title">Selected <span class="gold-gradient">Engineering Works</span></h2>
+        <p class="section-subtitle">
+          Practical hardware prototypes and autonomous automation pipelines built from first principles.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div>
+            <div class="project-num">PROJECT 01 // ROBOTICS & HARDWARE</div>
+            <h3>Autonomous Line-Tracking Robot</h3>
+            <p>
+              Autonomous ground vehicle engineered with an ATMega328P microcontroller running bare-metal C/C++. Features a 5-channel TCRT5000 infrared reflectance sensor array and closed-loop differential PWM motor control.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Arduino</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">IR Sensors</span>
+              <span class="tag">L298N Driver</span>
+              <span class="tag">Differential PWM</span>
+            </div>
+          </div>
+
+          <!-- Interactive Test Bench -->
+          <div class="test-bench">
+            <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:0.75rem;color:var(--gold-primary)">
+              <span>LIVE DIFFERENTIAL MOTOR TEST BENCH</span>
+              <span style="color:var(--text-muted)">Toggle sensor pins below:</span>
+            </div>
+            <div class="sensor-row">
+              <button class="sensor-btn" data-idx="0">S1</button>
+              <button class="sensor-btn" data-idx="1">S2</button>
+              <button class="sensor-btn active" data-idx="2">S3 (Center)</button>
+              <button class="sensor-btn" data-idx="3">S4</button>
+              <button class="sensor-btn" data-idx="4">S5</button>
+            </div>
+            <div class="pwm-display">
+              <div>Left Motor: <strong id="pwm-left" style="color:#34D399">180</strong> PWM</div>
+              <div>Right Motor: <strong id="pwm-right" style="color:var(--gold-primary)">180</strong> PWM</div>
+            </div>
+            <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);text-align:center;margin-top:6px">
+              Calculated Trajectory Error: <span id="sensor-error" style="color:var(--gold-primary)">0.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div>
+            <div class="project-num">PROJECT 02 // AI & AUTOMATION</div>
+            <h3>Autonomous AI Orchestrator & Workflow Pipeline</h3>
+            <p>
+              An autonomous workflow infrastructure engineered with n8n, orchestrating webhook ingestion, LLM reasoning (Gemini & OpenAI API), strict JSON schema validation, and multi-endpoint data persistence.
+            </p>
+            <div class="tag-list">
+              <span class="tag">n8n Engine</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">REST Webhooks</span>
+              <span class="tag">JSON Schema</span>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-subtle);font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted)">
+            Automated event-driven pipeline reducing repetitive operational triage to &lt;850ms.
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div>
+            <div class="project-num">PROJECT 03 // FULL-STACK WEB</div>
+            <h3>Ultra-Luxurious Digital Atelier V2</h3>
+            <p>
+              A high-performance personal portfolio built with modern responsive architecture, interactive canvas backgrounds, clean semantic markup, and future-ready API endpoints.
+            </p>
+            <div class="tag-list">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Express API</span>
+              <span class="tag">Vite</span>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-subtle);font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted)">
+            Engineered for high readability, WCAG compliance, and frictionless GitHub deployment.
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">02 // CAPABILITIES & RIGOR</div>
+        <h2 class="section-title">Tools I Use. <span class="gold-gradient">Skills I Build.</span></h2>
+        <p class="section-subtitle">
+          Presented as active domains of learning and experimentation, not inflated corporate claims.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Robotics & Embedded Systems</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem">
+            Arduino ATMega328P, C/C++, TCRT5000 IR sensor arrays, L298N H-Bridge drivers, PWM motor speed modulation.
+          </p>
+          <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h4>AI & Automation Engineering</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem">
+            n8n Workflow Automation, LLM API orchestration (Gemini, OpenAI), webhook endpoints, JSON Schema extraction.
+          </p>
+          <div class="progress-bar"><div class="progress-fill" style="width:82%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Software & Web Architecture</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem">
+            HTML5, Modern CSS, JavaScript (ESNext), TypeScript, React, Express, API proxying, Git version control.
+          </p>
+          <div class="progress-bar"><div class="progress-fill" style="width:86%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Foundational Sciences</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem">
+            Harvard CS50 algorithms and memory management in C, Newtonian physics, calculus, circuit laws.
+          </p>
+          <div class="progress-bar"><div class="progress-fill" style="width:88%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">03 // MILESTONES & EVIDENCE</div>
+        <h2 class="section-title">Learning in <span class="gold-gradient">Public.</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="skill-card">
+          <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--gold-primary);margin-bottom:0.5rem">COMPETITION // ROBOTICS</div>
+          <h4>RoboFusion Fest Challenge</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted)">
+            Competed on-site in a high-pressure robotics challenge, tuning optical sensor reflectance thresholds and motor control loops under competition lighting.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--gold-primary);margin-bottom:0.5rem">COURSEWORK // HARVARD</div>
+          <h4>Harvard CS50 Computer Science</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted)">
+            Rigorous study of computer science foundations, algorithm complexity, memory pointers in C, and computational problem solving.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--gold-primary);margin-bottom:0.5rem">ACADEMIC // SCIENCE GROUP</div>
+          <h4>Afajuddin Memorial School and College</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted)">
+            Developing an intensive academic foundation in higher mathematics, theoretical and applied physics, and chemistry in Dhaka.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundation & Balance -->
+  <section id="about" class="section">
+    <div class="container hero-grid">
+      <div>
+        <div class="section-eyebrow">04 // PHILOSOPHY</div>
+        <h2 class="section-title">More Than a <span class="gold-gradient">Student.</span></h2>
+        <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.7;margin-bottom:1rem">
+          From coding and physics to robotics and automation, I am building a broad technical foundation with the long-term goal of becoming a capable software engineer and technology creator.
+        </p>
+        <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.7">
+          Alongside technology, I am committed to physical fitness and sports. Discipline in athletics translates directly to focus and perseverance when resolving complex hardware bugs.
+        </p>
+      </div>
+
+      <div class="skill-card" style="display:flex;flex-direction:column;justify-content:center">
+        <blockquote style="font-family:var(--font-display);font-size:1.4rem;color:var(--gold-light);margin-bottom:1rem">
+          "Learn. Build. Improve."
+        </blockquote>
+        <p style="font-size:0.82rem;color:var(--text-muted)">
+          A simple, non-negotiable philosophy practiced every single day through curiosity and hands-on experimentation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">05 // INITIATE DIALOGUE</div>
+        <h2 class="section-title">Let's Build <span class="gold-gradient">Together.</span></h2>
+        <p class="section-subtitle">
+          Open for software engineering projects, robotics challenges, and research discussions.
+        </p>
+      </div>
+
+      <!-- Typo Alert Notice -->
+      <div style="padding:1rem;background:rgba(230,198,135,0.1);border:1px solid var(--border-gold);border-radius:10px;margin-bottom:2rem;font-size:0.82rem;color:var(--gold-light)">
+        ✓ <strong>Verified Email:</strong> The official direct communication email is <strong>contact.rubabhamim@gmail.com</strong>.
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted);margin-bottom:0.5rem">DIRECT EMAIL</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+            <a href="mailto:contact.rubabhamim@gmail.com" style="color:#FFF;text-decoration:none;font-weight:700;font-size:1.1rem">
+              contact.rubabhamim@gmail.com
+            </a>
+            <button id="copy-email-btn" class="btn btn-glass" style="padding:0.35rem 0.75rem">Copy</button>
+          </div>
+
+          <div style="font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);margin-bottom:1.5rem">
+            <div>LOCATION: Dhaka, Bangladesh · Remote Worldwide</div>
+            <div style="color:#34D399;margin-top:4px">STATUS: Open for Collaborations</div>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem">
+            <a href="https://www.linkedin.com/in/rubabhamim" target="_blank" rel="noreferrer" class="btn btn-glass">LinkedIn</a>
+            <a href="https://www.instagram.com/rubab_hamim?exln=MTgwdzFjb3k1cjh3dA==" target="_blank" rel="noreferrer" class="btn btn-glass">Instagram</a>
+            <a href="https://github.com/rubab-builds" target="_blank" rel="noreferrer" class="btn btn-glass">GitHub</a>
+            <a href="https://x.com/rubabhamim" target="_blank" rel="noreferrer" class="btn btn-glass">𝕏 Twitter</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Full Name</label>
+              <input type="text" id="contact-name" class="form-control" required placeholder="e.g. Dr. Eleanor Vance">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" required placeholder="e.g. eleanor@frontierlab.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message or Project Brief</label>
+              <textarea id="contact-message" class="form-control" rows="4" required placeholder="Describe your collaboration or project..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%">Dispatch Transmission</button>
+            <div id="form-feedback" style="display:none;margin-top:1rem;font-size:0.8rem;font-family:var(--font-mono)"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© <span id="current-year"></span> Rubab Hamim. Ultra-Luxurious Edition.</div>
+        <div>Built with Clean HTML, CSS & JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
